@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Casa 3D</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/three.js"></script>
+  <script src="assets/js/OrbitControls.js"></script>
+  <script src = "assets/js/OBJLoader.js"></script>
+</head>
+<body>
+
+<!-- notification for small viewports and landscape oriented smartphones -->
+<div class="device-notification">
+  <a class="device-notification--logo" href="#0">
+    <p>RODRIGO ALVARADO - 16106</p>
+  </a>
+  <p class="device-notification--message">Adaptative.</p>
+</div>
+
+<div class="perspective effect-rotate-left">
+  <div class="container"><div class="outer-nav--return"></div>
+    <div id="viewport" class="l-viewport">
+      <div class="l-wrapper">
+
+        <nav class="l-side-nav">
+          <ul class="side-nav">
+            <li class="is-active"><span>Instrucciones</span></li>
+            <li><span>Jugar</span></li>
+          </ul>
+        </nav>
+        <ul class="l-main-content main-content">
+          <li class="l-section section section--is-active">
+            <div class="intro">
+              <div class="intro--banner">
+                <h1>Poderosa<br>Casita<br>3D</h1>
+                <img src="assets/img/casita.png" alt="Welcome">
+              </div>
+              <div class="intro--options">
+                <a href="#0">
+                  <h3>MOVIMIENTO &amp; SELECCION DE OBJETO</h3>
+                  <p>Usa las teclas WASD para mover el objeto que tienes seleccionado. Puedes cambiar entre la poderosa casita y el herculeo arbol con "SHIFT"</p>
+                </a>
+                <a href="#0">
+                  <h3>ABRIR LA PODEROSA PUERTA</h3>
+                  <p>Utiliza "F" para abrir la poderosa puerta de la podeosa casita</p>
+                  <h3>WIREFRAME Y ESCALA</h3>
+                  <p>Utiliza "R" para hacer toogle del wireframe y "+" o "-" para escalar</p>
+                </a>
+                <a href="#0">
+                  <h3>SHEAR &amp; ROTACIONES</h3>
+                  <p>Para usar el shear, presiona las teclas Z, X, C &amp; V. Puedes rotar en x, y o z usando las teclas Q, E, 1, 2, 3 &amp; 4</p>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="l-section section">
+            <div class="work" id="canvas">
+              <script src="js/main.js"></script>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <ul class="outer-nav">
+    <li class="is-active">Instrucciones</li>
+    <li>Jugar</li>
+  </ul>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+<script src="assets/js/functions-min.js"></script>
+</body>
+</html>
